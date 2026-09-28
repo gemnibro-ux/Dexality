@@ -1,0 +1,47 @@
+                if cmd == 'PASTE':
+                    self.remove_registers = self.registers
+                    reg, val = args
+                    self.registers[reg] = val
+                elif cmd == 'ADD':
+                    self.remove_registers = self.registers
+                    reg1, reg2 = args
+                    self.registers[reg1] += self.registers[reg2]
+                elif cmd == 'REG':
+                    reg = args[0]
+                    if reg in self.registers:
+                        self.output += f"{reg} = {self.registers[reg]}\n"
+                    elif reg == "__REGS":
+                        for reg in self.registers:
+                            self.output += f"{reg} = {self.registers[reg]}\n"
+                    else:
+                        self.output += f"Ошибка: нет регистра {reg}\n"
+                elif cmd == 'MSG':
+                    message = args[0]
+                    self.output += f"{message}\n"
+                    if message is None:
+                        self.output += f"\n"
+                elif cmd == "MAKE":
+                    reg, val = args
+                    self.registers[reg] = val
+                elif cmd == "DEL":
+                    reg = args[0]
+                    del(self.registers[reg])
+                elif cmd == "MOVE":
+                    reg1, reg2 = args
+                    self.registers[reg1] = self.registers[reg2]
+                elif cmd == "REMOVE":
+                    reg = args[0]
+                    self.registers[reg] = self.remove_registers[reg]
+                elif cmd == 'HALT':
+                    self.running = False
+                elif cmd == 'CLEAR':
+                    reg = args[0]
+                    if reg in self.registers:
+                        self.registers[reg] = 0
+                    elif reg == "__REGS":
+                        for reg in self.registers:
+                            self.registers[reg] = 0
+                    else:
+                        self.output += f"Ошибка: нет регистра {reg}\n"
+                else:
+                    self.output += f"Ошибка: неизвестная команда {cmd}\n"
