@@ -1,0 +1,25 @@
+move DUN1 5000
+move DUN2 1000
+cell hi Welcome_to_dexality!
+
+msg cell hi
+
+add DUN1 DUN2
+msg reg DUN1
+
+sub DUN1 DUN2
+msg reg DUN1
+
+mul DUN1 DUN2
+msg reg DUN1
+
+div DUN1 DUN2
+msg reg DUN1
+
+corcell hi Dexality_so_cool!
+msg cell hi
+
+cleancell hi
+msg cell hi
+
+halt
