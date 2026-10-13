@@ -1,6 +1,6 @@
 # Dexality
 
-!["Иконка"](https://github.com/gemnibro-ux/Pixel-Flash/blob/main/icon.png)
+!["Иконка"](https://github.com/gemnibro-ux/Dexality/blob/main/icon.png)
 
 _Спойлер: Эмулятор находится в разработке. Если заметите баг то предупредите!_
 
@@ -16,6 +16,7 @@ Dexality (бывший Pixel Flash) — Это небольшой эмулято
 ## Главные функции
 
 1. move РЕГИСТР ЗНАЧЕНИЯ_ИЛИ_РЕГИСТР:
+   !["НОГИ ПТИЧИЙ ПОМЕТ"](https://github.com/gemnibro-ux/Dexality/blob/main/fascialnie_prostranstva_stopi-1230883476.jpg)
 - Функция, которая перемешивает первый регистр со голым значениям
 - Также она может двигать регистр к другому регистру
 
@@ -29,6 +30,7 @@ Dexality (бывший Pixel Flash) — Это небольшой эмулято
 - Создаёт в памяти временную ячейку данных со указаным значением
 
 5. halt
+   !["Х"](https://github.com/gemnibro-ux/Dexality/blob/main/znak-stop-i-stop-liniia-1-805676338.webp)
 - Эта функция останавливает терминал
 
 Другие функции находится в документации Dexality
@@ -37,7 +39,8 @@ Dexality (бывший Pixel Flash) — Это небольшой эмулято
 1. Чтобы всё заработало скачайте Python и библеотеку Pillow. Рекомендуется скачать версию 3.12 или выше.
 2. Скачайте эмулятор по ссылке: 
 3. Запустите код и наслаждайтесь!<br><br><br>
-![Кот тапает в клаву](https://github.com/gemnibro-ux/Pixel-Flash/blob/main/letsgo.gif)<br><br><br>
+![Кот тапает в клаву](https://github.com/gemnibro-ux/Dexality/blob/main/kaknakachatruki-2344830061.jpg)<br>
+![Кот тапает в клаву](https://github.com/gemnibro-ux/Dexality/blob/main/letsgo.gif)<br><br><br>
 Ссылки ;):<br>
 Мой веб-сайт: [Веб-Сайт](https://gemnibro-ux.github.io "The site!")<br>
 Мой YouTube: [YouTube](https://www.youtube.com/channel/UCy8o6X8bEyYThhQokJyjgoA "YouTube")<br>
