@@ -49,7 +49,10 @@ class VirtualMachine:
                             self.output += str(self.registers[obj]) + "\n"
                     case "move":
                         reg, val = args
-                        self.registers[reg] = int(val)
+                        if val not in self.registers:
+                            self.registers[reg] = int(val)
+                        else:
+                            self.registers[reg] = self.registers[val]
                     case "halt":
                         self.running = False
 
